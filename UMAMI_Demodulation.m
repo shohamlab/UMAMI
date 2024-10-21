@@ -27,7 +27,7 @@ g = 0;                                      % use a GPU for filtering.
  %%%  Frequency Filter %%%
 %**************************************
 
-for slice = 1:1%length(list) % file number = slice
+for slice = 1:length(list)                  % file number = slice
 
     pathi = [fullfile(fileparts(which([list(slice).name]))),'/'];
     nami = erase(list(slice).name,'.tif');
