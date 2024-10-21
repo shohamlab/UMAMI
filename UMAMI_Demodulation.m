@@ -11,9 +11,9 @@ list=dir ([direc, '/', '**/*.tif']);              % find tif files
 
 
 %%%% Input parameters %%%%%%
-nOfImagePerSlice = 200;                    % change based on the # of recorded frame
-startingFrame = 31;
-USFrameStep = 31;                          % the frame interval between two pulses (eg 121 frames)
+nOfImagePerSlice = 2000;                    % change based on the # of recorded frame
+startingFrame = 122;
+USFrameStep = 121;                          % the frame interval between two pulses (eg 121 frames)
 nOfPulse = floor(nOfImagePerSlice/USFrameStep);
 nOfModulatedFramePerPulse = 6;              % number of the frame in each US pulse
 fD = [885 915];                             % DC frequency bandwidth
